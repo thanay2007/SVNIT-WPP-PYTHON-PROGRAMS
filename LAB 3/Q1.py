@@ -9,4 +9,4 @@ def digital_root(n):
 
 n = int(input("Enter a number : "))
 n = digital_root(n)
-print(n)
+print("Digital root: ",n)
