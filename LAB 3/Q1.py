@@ -7,6 +7,10 @@ def digital_root(n):
         n = sum_digits 
     return n
 
-n = int(input("Enter a number : "))
-n = digital_root(n)
-print("Digital root: ",n)
+while(True):
+    n = int(input("Enter a number : "))
+    dr = digital_root(n)
+    print("Digital root:",dr)
+    a = input("Do you wish to continue (y/n) : ")
+    if a != "y":
+        break
