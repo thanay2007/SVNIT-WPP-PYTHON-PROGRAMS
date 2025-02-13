@@ -7,10 +7,15 @@ def is_fibonacci(n):
         a = b
         b = a + b 
     return False
-  
-num = int(input("Enter a number: "))
 
-if is_fibonacci(num) == True:
-    print(num, "is a fibonacci number.")
-else:
-    print(num, "is not a Fibonacci number.")
+while(True):
+    num = int(input("Enter a number: "))
+
+    if is_fibonacci(num) == True:
+        print(num, "is a fibonacci number.")
+    else:
+        print(num, "is not a Fibonacci number.")
+
+    a = input("Do you wish to continue (y/n) : ")
+    if a != "y":
+        break
